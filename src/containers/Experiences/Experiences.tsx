@@ -24,8 +24,10 @@ export const Experiences = () => {
             {
                 data.experiences.map((experience, index) => {
                     return <button
+                        key={experience.id}
                         onClick={() => setSelectedExperience(index)}
-                        className={`${styles.experience_button} ${index === selectedExperience && styles.experience_selected}`}>
+                        className={`${styles.experience_button} ${index === selectedExperience && styles.experience_selected}`}
+                    >
                         <Typography.Caption>{experience.companyName}</Typography.Caption>
                     </button>
                 })
@@ -34,10 +36,12 @@ export const Experiences = () => {
 
 
         <div className={styles.description}>
-            <Typography.Title1>{`${experience.position} @ ${experience.companyName}`}</Typography.Title1>
+            <Typography.Title2>{`${experience.position} @ ${experience.companyName}`}</Typography.Title2>
             {
                 descriptionItems.map((descriptionItem, index) => {
-                    return <div className={styles.description_item}>
+                    return <div
+                        key={index}
+                        className={styles.description_item}>
                         <div className={styles.check_icon_container}>
                             <AiFillCheckCircle size={24} className={styles.check_icon} />
 

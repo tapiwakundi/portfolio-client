@@ -9,6 +9,7 @@
 
 .experiences_container, .projects_container {
     min-height: 100vh;
+    padding-top: 2em;
 }
 
 .name {

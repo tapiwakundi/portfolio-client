@@ -16,6 +16,10 @@ const Title1 = ({ children, className }: Props) => {
     return <h1 className={`${styles.title1} ${className}`}>{children}</h1>
 }
 
+const Title2 = ({ children, className }: Props) => {
+    return <h1 className={`${styles.title2} ${className}`}>{children}</h1>
+}
+
 const Caption = ({ children }: Props) => {
     return <span className={styles.caption}>{children}</span>
 }
@@ -37,6 +41,7 @@ const Callout2 = ({ children, className }: Props) => {
 }
 Typography.LargeTitle = LargeTitle
 Typography.Title1 = Title1
+Typography.Title2 = Title2
 Typography.Caption = Caption
 Typography.Caption2 = Caption2
 Typography.Headline = Headline

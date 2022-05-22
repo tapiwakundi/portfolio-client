@@ -11,6 +11,14 @@
 .title1 {
     color: white;
     text-align: left;
+    font-size: 3em;
+}
+
+.title2 {
+    color: white;
+    text-align: left;
+    font-size: 2em;
+
 }
 
 .caption {
