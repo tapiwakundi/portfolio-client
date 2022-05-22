@@ -1,8 +1,6 @@
-import { useQuery } from "@apollo/client"
 import { HeaderTitle, Typography } from "../../components"
 import { Experiences, Page, Projects, Articles } from "../../containers"
 import styles from './index.module.css'
-import { colors } from '../../global/rootColors'
 
 export const Home = () => {
     return <Page>
@@ -26,7 +24,7 @@ export const Home = () => {
             <Projects />
         </section>
 
-        <section className={styles.projects_container} id="articles">
+        <section className={styles.articles_container} id="articles">
             <HeaderTitle index='03'>Articles.</HeaderTitle>
             <Articles />
         </section>

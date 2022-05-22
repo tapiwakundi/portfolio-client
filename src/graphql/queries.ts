@@ -54,6 +54,7 @@ query {
       }
     }
     date
+    name
   }
 }
 `  

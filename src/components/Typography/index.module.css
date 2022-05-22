@@ -1,7 +1,6 @@
 @import url('../../global/rootColors.css');
 
 .largeTitle {
-    color: white;
     font-size: 4em;
     text-align: left;
     margin-top: 0;
@@ -9,13 +8,11 @@
 }
 
 .title1 {
-    color: white;
     text-align: left;
     font-size: 3em;
 }
 
 .title2 {
-    color: white;
     text-align: left;
     font-size: 2em;
 
@@ -25,12 +22,11 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    color: white
 }
 
 .caption2 {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.4em;
     line-height: 24px;
 }
 

@@ -12,17 +12,23 @@ type ApolloArticles = {
 export const Articles = () => {
     const { data } = useQuery<ApolloArticles>(GET_ARTICLES)
 
-    console.log(data);
-
     if (!data) return <Typography.Title1>No articles found</Typography.Title1>
 
 
     return <div className={styles.articles_container}>
         {
             data.articles.map(article => {
-                return <div className={styles.article_container}>
+                return <a
+                    className={styles.article_container}
+                    href={article.url}
+                    target="_blank" rel="tapiwakundi.com noreferrer"
+                >
                     <img src={article.thumbnail.fieldName.publicUrlTransformed} alt="" className={styles.article_thumbnail} />
-                </div>
+                    <div className={styles.text_container}>
+                        <Typography.Caption2>{article.name}</Typography.Caption2>
+                        <Typography.Callout2>{article.date}</Typography.Callout2>
+                    </div>
+                </a>
             })
         }
     </div>
