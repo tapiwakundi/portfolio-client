@@ -1,0 +1,40 @@
+
+
+.banner {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.features_image {
+    width: 30vmin;
+}
+
+.features_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.challenges_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.challenge_item_header {
+    position: relative;
+    margin-bottom: 1em;
+    min-height: 55px;
+    display: flex;
+    align-items: center;
+    gap: 0.5em
+}
+
+.challenge_index{
+    color: var(--primary-40);
+    margin: 0;
+}
+
+.challenge_name {
+    margin-bottom: 1em;
+}

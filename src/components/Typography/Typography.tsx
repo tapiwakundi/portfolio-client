@@ -24,8 +24,8 @@ const Caption = ({ children }: Props) => {
     return <span className={styles.caption}>{children}</span>
 }
 
-const Caption2 = ({ children }: Props) => {
-    return <span className={styles.caption2}>{children}</span>
+const Caption2 = ({ children, className }: Props) => {
+    return <span className={`${styles.caption2} ${className}`}>{children}</span>
 }
 
 const Headline = ({ children }: Props) => {

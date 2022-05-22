@@ -1,0 +1,17 @@
+@import url('../../global/rootColors.css');
+
+.description_item {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.check_icon {
+    fill: var(--primary);
+    width: 24px;
+    height: 24px;
+}
+
+.description_text {
+    text-align: left;
+    margin-left: 0.5em;
+}

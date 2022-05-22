@@ -32,7 +32,6 @@ export const NavBar = () => {
             <a href="https://github.com/tapiwakundi" target="_blank" rel="noreferrer">
                 <AiFillGithub size={24} />
             </a>
-
             <div className={styles.line}></div>
         </div>
 

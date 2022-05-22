@@ -3,7 +3,7 @@ import styles from './index.module.css'
 import { useQuery } from "@apollo/client"
 import { GET_EXPERIENCES } from '../../graphql/queries'
 import { Experience } from '../../types/Experience'
-import { Typography } from '../../components'
+import { CheckMarkRow, Typography } from '../../components'
 import { AiFillCheckCircle } from 'react-icons/ai'
 
 type AppoloExperiences = {
@@ -38,17 +38,7 @@ export const Experiences = () => {
         <div className={styles.description}>
             <Typography.Title2>{`${experience.position} @ ${experience.companyName}`}</Typography.Title2>
             {
-                descriptionItems.map((descriptionItem, index) => {
-                    return <div
-                        key={index}
-                        className={styles.description_item}>
-                        <div className={styles.check_icon_container}>
-                            <AiFillCheckCircle size={24} className={styles.check_icon} />
-
-                        </div>
-                        <Typography.Callout2 className={styles.description_text}>{descriptionItem}</Typography.Callout2>
-                    </div>
-                })
+                descriptionItems.map((descriptionItem, index) => <CheckMarkRow key={index} text={descriptionItem} />)
             }
         </div>
 

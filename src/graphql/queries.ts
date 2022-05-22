@@ -34,10 +34,26 @@ query($id: ID ) {
     name
     organization
     shortDescription
+    objective
+    features
+    images {
+      fieldName {
+        publicUrl
+      }
+    }
     thumbnail {
       fieldName {
         publicUrlTransformed
       }
+    }
+    banner {
+      fieldName {
+        publicUrlTransformed
+      }
+    }
+    challenges {
+      name
+      description
     }
   }
 }
