@@ -1,3 +1,5 @@
+@import url('../../global/rootColors.css');
+
 .nav_container {
     background-color: #2D2D2D;
     width: 110px;
@@ -8,13 +10,48 @@
     position: fixed;
     left: 0;
     height: 100vh;
-    margin-bottom: 25em;
+    margin-bottom: 20em;
 }
 
 .nav_options {
-    height: 70vh;
+    height: 63vh;
     width: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.nav_item {
+    text-decoration: none;
+    color: var(--gray);
+    margin-bottom: 1em;
+}
+
+.nav_item:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.nav_socials {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+.nav_socials svg {
+    text-decoration: none;
+    fill: white;
+}
+
+.nav_socials svg:hover {
+    fill: var(--primary)
+}
+
+.line {
+    height: 100px;
+    overflow: hidden;
+    border-left: 1px solid var(--primary-40);
+    width: 1px;
 }

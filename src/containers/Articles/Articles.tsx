@@ -19,6 +19,7 @@ export const Articles = () => {
         {
             data.articles.map(article => {
                 return <a
+                    key={article.id}
                     className={styles.article_container}
                     href={article.url}
                     target="_blank" rel="tapiwakundi.com noreferrer"
