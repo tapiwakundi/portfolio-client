@@ -22,9 +22,6 @@ export const Project = () => {
 
     const { project } = data
 
-    console.log(project.images[0].fieldName);
-
-
     return <Page>
         <Typography.Title1>{project.name}</Typography.Title1>
         <img
@@ -46,7 +43,6 @@ export const Project = () => {
                     }
                 </div>
                 <img src={project.images[0].fieldName.publicUrl} alt="" className={styles.features_image} />
-
             </div>
         </section>
 
@@ -67,5 +63,66 @@ export const Project = () => {
 
             </div>
         </section>
+
+        <section className={styles.overview_section}>
+            <div>
+                <div>
+                    <Typography.Caption>Major Tasks</Typography.Caption>
+                    <div className={styles.major_tasks_container}>
+                        {
+                            project.majorTasks.split('-').map(task => {
+                                return task && <li className={styles.task}>
+                                    <Typography.Callout2>{task}</Typography.Callout2>
+                                </li>
+                            })
+                        }
+                    </div>
+
+                </div>
+
+                <div className={styles.column}>
+                    <Typography.Caption>Name</Typography.Caption>
+                    <Typography.Callout2>{project.name}</Typography.Callout2>
+                </div>
+
+            </div>
+            <div>
+                <div className={styles.column}>
+                    <Typography.Caption>Organization</Typography.Caption>
+                    <Typography.Callout2>{project.organization}</Typography.Callout2>
+                </div>
+
+                <div className={styles.column}>
+                    <Typography.Caption>Tech Stack</Typography.Caption>
+                    <div >
+                        {
+                            project.technologies.split(',').map(task => {
+                                return task && <li className={styles.task}>
+                                    <Typography.Callout2>{task}</Typography.Callout2>
+                                </li>
+                            })
+                        }
+                    </div>
+
+                </div>
+
+                <div className={styles.column}>
+                    <Typography.Caption>Year</Typography.Caption>
+                    <Typography.Callout2>{project.year.toString()}</Typography.Callout2>
+                </div>
+            </div>
+        </section>
+
+        {/* <section className={styles.images_grid}>
+            <img
+                src={project.images[1].fieldName.publicUrl}
+                style={{ flex: 3 }}
+                className={styles.extra_image} alt="" />
+            <img src={project.images[2].fieldName.publicUrl}
+                style={{ flex: 1 }}
+
+                className={styles.extra_image} alt="" />
+
+        </section> */}
     </Page>
 }

@@ -55,6 +55,9 @@ query($id: ID ) {
       name
       description
     }
+    majorTasks
+    technologies
+    year
   }
 }
 `

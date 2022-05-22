@@ -11,6 +11,9 @@ export type Project = {
     features: string
     images: ProjectImage[]
     challenges: Challenge[]
+    majorTasks: string
+    technologies: string
+    year: number
 }
 
 type ProjectImage = {
