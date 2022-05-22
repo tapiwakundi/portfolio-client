@@ -1,0 +1,25 @@
+@import url('../../global/rootColors.css');
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    color: var(--accent)
+}
+
+.index {
+    position: absolute;
+    color: var(--primary);
+    opacity: 0.2;
+    top: -16px;
+    left: -15px;
+}
+
+.line {
+    width: 200px;
+    border-top: 1px solid var(--accent);
+    margin-left: 2em;
+}

@@ -1,5 +1,35 @@
+@import url('../../global/rootColors.css');
+
 .hero_container {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    height: 100vh;
+}
+
+.experiences_container, .projects_container {
+    min-height: 100vh;
+}
+
+.name {
+    color: var(--accent);
+}
+
+.headline {
+    color: var(--accent-darken);
+    margin-bottom: 0.5em;
+}
+
+.description {
+    text-align: left;
+    width: 30em;
+    margin-bottom:5em;
+}
+
+.button {
+    border: 1px solid var(--primary);
+    padding: 1em 4em 1em;
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--primary);
 }

@@ -1,5 +1,9 @@
 :root {
     --primary: #ED7937;
+    --primary-40: rgba(237, 121, 55, 0.4);
+    --primary-60: #f7c9ae;
+
+    --secondary: #37C1ED;
 
     --accent: #B2D3DE;
     --accent-darken: #4F5F64;

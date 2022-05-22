@@ -7,12 +7,13 @@ type Props = {
 
 export const Typography = () => { }
 
-const LargeTitle = ({ children }: Props) => {
-    return <h1 className={styles.largeTitle}>{children}</h1>
+
+const LargeTitle = ({ children, className }: Props) => {
+    return <h1 className={`${styles.largeTitle} ${className}`}>{children}</h1>
 }
 
-const Title1 = ({ children }: Props) => {
-    return <h1>{children}</h1>
+const Title1 = ({ children, className }: Props) => {
+    return <h1 className={`${styles.title1} ${className}`}>{children}</h1>
 }
 
 const Caption = ({ children }: Props) => {

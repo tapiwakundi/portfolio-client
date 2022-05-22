@@ -1,0 +1,7 @@
+@import url('../../global/rootColors.css');
+
+.button {
+    all: unset;
+    border: 1px solid var(--primary);
+    padding: 1em;
+}
