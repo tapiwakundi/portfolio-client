@@ -6,7 +6,13 @@
 }
 
 .children {
-    width: 100%;
+    width: 100vw;
     padding: 5em 10%;
     margin-left: 110px
+}
+
+@media only screen and (max-width: 600px) {
+    .children {
+        margin-left: 0;
+    }
 }

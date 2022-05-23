@@ -23,7 +23,7 @@
 
 .description {
     text-align: left;
-    width: 30em;
+    max-width: 72vmin;
     margin-bottom:5em;
 }
 
@@ -58,4 +58,18 @@
 .button:hover:before{
     opacity: 1;
     width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .headline {
+        max-width: 72vmin;
+    }
+
+    .description {
+        margin-bottom: 2em;
+    }
+
+    .hero_container {
+        height: 58vh;
+    }
 }

@@ -23,6 +23,10 @@
     width: 40vmin;
 }
 
+.project_thumbnail_mobile {
+    display: none;
+}
+
 .button {
     border: 1px solid white;
     padding: 1em 4em 1em;
@@ -30,4 +34,30 @@
     color: white;
     align-self: start;
     margin-top: 5em;
+}
+
+@media only screen and (max-width: 600px) {
+    .projects_container {
+        max-width: 65vmin;
+    }
+
+    .project_container {
+        flex-direction: column;
+        width: 100%
+    }
+
+    .left {
+        max-width: 100%
+    }
+
+    .project_thumbnail_mobile {
+        display: inline;
+        width: 38vmin;
+        align-self: center;
+    }
+
+    .project_thumbnail {
+        display: none;
+    }
+    
 }

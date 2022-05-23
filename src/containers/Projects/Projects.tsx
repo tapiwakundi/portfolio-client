@@ -26,6 +26,8 @@ export const Projects = () => {
                     <div className={styles.left}>
                         <Typography.Title1>{project.name}</Typography.Title1>
                         <Typography.Callout2>{project.shortDescription}</Typography.Callout2>
+                        <img src={project.thumbnail.fieldName.publicUrlTransformed} alt='' className={styles.project_thumbnail_mobile} />
+
                         <a href={`/project/${project.id}`} className={styles.button}>
                             Learn more
                         </a>

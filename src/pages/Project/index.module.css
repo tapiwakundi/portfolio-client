@@ -6,7 +6,7 @@
 }
 
 .features_image {
-    width: 30vmin;
+    max-width: 30vmin;
 }
 
 .features_container {
@@ -70,5 +70,5 @@
 }
 
 .extra_image {
-    width: 100%;
+    max-width: 100%;
 }
