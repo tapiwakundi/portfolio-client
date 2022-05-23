@@ -38,3 +38,9 @@
     flex-direction: column;
     gap: 0.6em;
 }
+
+@media only screen and (max-width: 600px) {
+    .article_container:hover {
+        transform: none
+     }
+}

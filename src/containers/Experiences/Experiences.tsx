@@ -4,7 +4,6 @@ import { useQuery } from "@apollo/client"
 import { GET_EXPERIENCES } from '../../graphql/queries'
 import { Experience } from '../../types/Experience'
 import { CheckMarkRow, Typography } from '../../components'
-import { AiFillCheckCircle } from 'react-icons/ai'
 
 type AppoloExperiences = {
     experiences: Experience[],
