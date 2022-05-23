@@ -72,3 +72,14 @@
 .extra_image {
     max-width: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+    .features_container {
+        flex-direction: column;
+    }
+
+    .features_image {
+        max-width: 83vmin;
+    }
+    
+}
