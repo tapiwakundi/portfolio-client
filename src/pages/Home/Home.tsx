@@ -1,5 +1,5 @@
 import { HeaderTitle, Typography } from "../../components"
-import { Experiences, Page, Projects, Articles } from "../../containers"
+import { Experiences, Page, Projects, Articles, Footer } from "../../containers"
 import styles from './index.module.css'
 
 export const Home = () => {
@@ -28,5 +28,7 @@ export const Home = () => {
             <HeaderTitle index='03'>Articles.</HeaderTitle>
             <Articles />
         </section>
+
+        <Footer />
     </Page>
 }

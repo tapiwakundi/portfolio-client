@@ -1,7 +1,8 @@
 import styles from './index.module.css'
+import React from 'react'
 
 type Props = {
-    children: string;
+    children: React.ReactNode;
     className?: string;
 }
 

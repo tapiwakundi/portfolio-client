@@ -1,5 +1,5 @@
 .projects_container {
-    margin-top: 2em;;
+    margin-top: 2em;
 }
 
 .project_container {
@@ -7,6 +7,7 @@
     display: flex;
     padding: 2em;
     justify-content: space-between;
+    margin-bottom: 2em;
 }
 
 .left {
@@ -21,10 +22,12 @@
 
 .project_thumbnail {
     width: 40vmin;
+    object-fit: contain;
 }
 
 .project_thumbnail_mobile {
     display: none;
+    object-fit: contain;
 }
 
 .button {
@@ -54,10 +57,12 @@
         display: inline;
         width: 38vmin;
         align-self: center;
+        object-fit: contain;
     }
 
     .project_thumbnail {
         display: none;
+        object-fit: contain;
     }
     
 }
