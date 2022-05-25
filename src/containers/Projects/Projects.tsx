@@ -3,7 +3,7 @@ import { useQuery } from '@apollo/client'
 import { GET_PROJECTS } from '../../graphql/queries'
 import styles from './index.module.css'
 import { Project } from '../../types'
-import { Typography } from '../../components'
+import { Skeleton, Typography } from '../../components'
 
 type ApolloProject = {
     projects: Project[],
@@ -12,7 +12,7 @@ type ApolloProject = {
 export const Projects = () => {
     const { data } = useQuery<ApolloProject>(GET_PROJECTS)
 
-    if (!data) return <Typography.Title1>No Data</Typography.Title1>
+    if (!data) return <Skeleton.Project />
     const colors = ['#ED7937', '#1DB954']
 
     return <div className={styles.projects_container}>

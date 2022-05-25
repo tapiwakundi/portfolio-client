@@ -3,7 +3,7 @@ import styles from './index.module.css'
 import { useQuery } from "@apollo/client"
 import { GET_EXPERIENCES } from '../../graphql/queries'
 import { Experience } from '../../types/Experience'
-import { CheckMarkRow, Typography } from '../../components'
+import { CheckMarkRow, Skeleton, Typography } from '../../components'
 
 type AppoloExperiences = {
     experiences: Experience[],
@@ -13,7 +13,8 @@ export const Experiences = () => {
     const { data } = useQuery<AppoloExperiences>(GET_EXPERIENCES)
     const [selectedExperience, setSelectedExperience] = React.useState(0)
 
-    if (!data) return <span>No Data</span>
+
+    if (!data) return <Skeleton.Experience />
     const experience = data.experiences[selectedExperience]
     const descriptionItems = experience.description.split('\n')
 
