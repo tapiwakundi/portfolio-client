@@ -1,4 +1,4 @@
-import { Page } from "../../containers"
+import { Footer, Page } from "../../containers"
 import { useParams } from "react-router-dom"
 import { useQuery } from '@apollo/client'
 import { GET_PROJECT } from '../../graphql/queries'
@@ -112,6 +112,7 @@ export const Project = () => {
                 </div>
             </div>
         </section>
+        <Footer />
 
         {/* <section className={styles.images_grid}>
             <img
