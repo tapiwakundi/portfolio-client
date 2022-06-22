@@ -13,7 +13,7 @@ export const Projects = () => {
     const { data } = useQuery<ApolloProject>(GET_PROJECTS)
 
     if (!data) return <Skeleton.Project />
-    const colors = ['#ED7937', '#1DB954']
+    const colors = ['#ED7937', '#1DB954', '#1ABC9C']
 
     return <div className={styles.projects_container}>
         {
