@@ -14,7 +14,7 @@ export const NavBar = () => {
             <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://res.cloudinary.com/dnmlpwow2/image/upload/v1656187126/portfolio/Tapiwa_Resume_June_2022_cybihw.pdf"
+                href="https://res.cloudinary.com/dnmlpwow2/image/upload/v1659543315/portfolio/Tapiwa_Kundishora_wkgbvu.pdf"
                 download
                 className={styles.nav_item}
             >
